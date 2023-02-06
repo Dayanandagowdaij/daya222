@@ -1,0 +1,242 @@
+/*CSS Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+     
+ }
+
+/* Navigation Bar : Logo and Image */
+#logo{
+    margin: 10px 34px ;
+    
+}
+
+#logo img{
+    height: 70px;
+    border: black 2px solid;
+    border-radius: 60px;
+    margin: 5px 10px;
+
+}
+
+/* Navigation Bar : List Styling  */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+
+#navbar ul li{
+   /* margin: 10px; */
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+     color: white;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    background-color: white
+    ;
+color: black;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+  background: url('../img/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:600px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .89;
+}
+
+#home h1{
+    color: white;
+    margin-top: 400px;
+    text-align: center;
+    font-family: 'Itim', cursive;
+
+}
+
+#home p{
+    margin-top: 10px;
+color: white;
+text-align: center;
+font-size: 20px;
+}
+/* Servicee Section */
+.servicebox{
+    display: flex;
+    flex-direction: column;
+}
+#services{
+    margin: 3px;
+    margin-top: 0px;
+    display: flex;
+   
+}
+.services-container h1{
+    margin-top: 461px;
+    margin-bottom: 0px;
+}
+#services .box{
+    border: 2px red solid;
+    margin: 3px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 251, 252);
+    
+    
+}
+
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* Clients Section */
+.client-section::before{
+    content: "";
+    background: url('../img/bg1.jpg')no-repeat center center/cover;
+    position: absolute;
+    height:180%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+} 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+}
+
+#contact-box form{
+    width: 40%;
+}
+.form-group label{
+    font-size:1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+   padding: 34px;
+}
+
+
+.client-item img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: ;
+    color: rgb(9, 1, 1);
+   padding:5px;
+   position: relative;
+   margin: 10px;
+}
+
+
+/* utility classes */
+.h-primary{
+    font-family: "Bree Serif",serif;
+    font-size: 2.5rem;
+    padding: 12px;
+    margin: 30px;
+    text-align: center;
+}
+.h-secondary{
+    
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+button{
+padding: 5px 40px;
+border: 2px black solid;
+background-color: rgb(162, 78, 240);
+color: white;
+margin: 20px;
+border-radius: 10px;
+cursor: pointer;
+margin-top: 50px;
+
+
+}
+
+
+.cennter{
+    text-align: center;
+}
